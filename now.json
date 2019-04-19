@@ -3,14 +3,14 @@
   "name": "apollo-server-micro-api",
   "builds": [
     {
-      "src": "./api/index.js",
+      "src": "index.js",
       "use": "@now/node"
     }
   ],
   "routes": [
     {
       "src": "/.*",
-      "dest": "/api/index.js"
+      "dest": "index.js"
     }
   ],
   "github": {
