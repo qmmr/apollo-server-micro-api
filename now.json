@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "name": "apollo-server-micro-api",
+  "builds": [
+    {
+      "src": "./api/index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/api/index.js"
+    }
+  ],
+  "github": {
+    "enabled": true
+  }
+}
