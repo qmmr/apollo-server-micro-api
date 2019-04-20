@@ -4,7 +4,7 @@
   "description": "Test server",
   "main": "index.js",
   "scripts": {
-    "start": "micro"
+    "start": "micro ./api/index.js"
   },
   "author": "",
   "license": "ISC",

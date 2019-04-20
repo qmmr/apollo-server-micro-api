@@ -3,7 +3,7 @@
   "name": "apollo-server-micro-api",
   "builds": [
     {
-      "src": "index.js",
+      "src": "./api/index.js",
       "use": "@now/node"
     }
   ],
