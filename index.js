@@ -14,6 +14,6 @@ const resolvers = {
   }
 }
 
-const apolloServer = new ApolloServer({ typeDefs, resolvers })
+const apolloServer = new ApolloServer({ typeDefs, resolvers, playground: true, introspection: true })
 
 module.exports = apolloServer.createHandler()
