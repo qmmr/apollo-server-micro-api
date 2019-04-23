@@ -1,19 +1,6 @@
-const { ApolloServer, gql } = require('apollo-server-micro')
+const { ApolloServer } = require('apollo-server-micro')
+const schema = require('./schema')
 
-const typeDefs = gql`
-  type Query {
-    sayHello: String
-  }
-`
-
-const resolvers = {
-  Query: {
-    sayHello(parent, args, context) {
-      return 'Hello World!'
-    }
-  }
-}
-
-const apolloServer = new ApolloServer({ typeDefs, resolvers, playground: true, introspection: true })
+const apolloServer = new ApolloServer({ schema, playground: true, introspection: true })
 
 module.exports = apolloServer.createHandler()
